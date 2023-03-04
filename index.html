@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        body
+        {
+            background-color: rgb(3, 0, 0);
+            height: 100vh;
+            width: 95vw;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #div1
+        {
+            height: 50vh;
+            width: 99vw;
+            position: absolute;
+            bottom: 0px;
+            background-color: rgb(3, 0, 0);
+        }
+        img:hover
+        {
+            width: 100%;
+            height: 50vh;
+            transition-delay: 0ms;
+        }
+        h1
+        {
+            padding-top: 10px;
+            font-size: 80px;
+            /* font-style: italic; */
+            font-weight: bolder;
+            letter-spacing: 5px;
+            color:coral ;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            /* font-family: monospace; */
+            text-shadow: 5px 5px 10px rgb(38, 38, 51);
+        }
+        #bday
+        {
+            position: relative;
+            bottom: 20px;
+        }
+        p
+        {
+            margin-top: -15px;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+<body >
+    <center>
+    <h1>Happy</h1>
+    <h1 id="bday">Birthday</h1>
+    <p>“Count not the candles…see the lights they give. Count not the years, but the life you live. Wishing you a wonderful time ahead. Happy birthday Srinivas.”</p>
+    </center>
+    <div id="div1">
+        <center>
+        <img src="./bday.gif" onmouseover="music()">
+        </center>
+    </div>
+    <script>
+        function music()
+        {
+            var musicaudio=new Audio()
+            musicaudio.src="./01-Monk-Turner-Fascinoma-Its-Your-Birthday.mp3"
+            musicaudio.play()
+        }
+    </script>
+</body>
+</html>
